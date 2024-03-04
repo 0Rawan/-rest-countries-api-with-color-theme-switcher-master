@@ -2,7 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+
+body, html{
+  height: fit-content;
+  min-height: 100vh;
+}
+
+@layer base{
+  body {
+      @apply dark:bg-gray-800 bg-white
+  }
+}
+
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,4 +43,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
